@@ -11,8 +11,39 @@
 html,body{
     height: 100%;
     width: 100%;
+    cursor: none;
+
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
 }
 
+
+/* cursor */
+.cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    margin-left: -20px;
+    margin-top: -20px;
+    border-radius: 50%;
+    border: solid 10px;
+    transition: transform .3s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.grow, .grow-small{
+    transform: scale(10);
+    background: #fff;
+    mix-blend-mode: difference;
+    border: none;
+}
+.grow-small{
+    transform: scale(2.5);
+}
 
 #main{
     overflow-y: hidden;
