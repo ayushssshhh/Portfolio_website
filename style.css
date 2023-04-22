@@ -65,7 +65,15 @@ html,body{
     max-height: 1100px;
     width: 100vw;
     background-color: #000000;
+
+    /* hidding scrollBar */
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+#page1::-webkit-scrollbar {
+    display: none;
+  }
 
 #page2{
     overflow: hidden;
@@ -494,34 +502,51 @@ nav li:hover a{
     padding: 0px 20px;
     transform: rotate(90deg);
     font-family: 'Poppins', sans-serif;
-    
-    font-size: 4vmin;
+    font-size: 20px;
 }
 
 /* page3 */
 
 .con2{
-    position: relative;
-    top: 100vh;
+    padding: 20px;
     width: 80vw;
+    position: absolute;
+    top: 100vh;
     left: 50%;
-    transform: translate(-40% , -35%);
+    transform: translate( -40% );
     /* background-color: rgb(219, 0, 0); */
+    background-image: repeating-radial-gradient(farthest-corner at 00px 0px, black 25% , rgb(88, 88, 163) 30% );
+    background-size: 900% 900%;
+    animation: color 20s ease-in-out alternate infinite;
 }
 
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 120% 150%;
+    }
+
+    10%{
+        background-position: 50% 100%;
+    }  
+
+}
 .con2 h2{
+    font-size: 3vmin;
     letter-spacing: 2px;
     text-align: left;
-    color: #fffeff;
-    font-family:  'Poppins';    
-    font-size: 3vmin;
+    color: #ffffff;
+    font-family:  'Poppins';
     font-weight: 200;
 }
 
 .con2 h2 span{
+    font-size: 4vmin;
     font-style: italic;
     font-family: 'poppins';
     font-weight: 600;
-    font-size: 4vmin;
-    color: #0f6ae9a8;
+    color: #fbfcff;
 }
