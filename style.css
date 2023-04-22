@@ -474,7 +474,10 @@ nav li:hover a{
 #page1 .title{
     position: relative;
     top: 100vh;
-    background-color: #fff;
+    width: fit-content;
+    position: relative;
+    transform: translate(-36% , 70px);
+    
 }
 
 .title div{
@@ -486,25 +489,39 @@ nav li:hover a{
 }
 
 .title h2{
-    font-size: 11vmin;
+    /* font-size: 11vmin; */
+    background-color: #fff;
+    padding: 0px 20px;
+    transform: rotate(90deg);
     font-family: 'Poppins', sans-serif;
+    
+    font-size: 4vmin;
 }
 
 /* page3 */
 
 .con2{
-    margin: 20px 0;
-    padding: 5%;
-    background-color: yellow;
+    position: relative;
+    top: 100vh;
+    width: 80vw;
+    left: 50%;
+    transform: translate(-40% , -35%);
+    /* background-color: rgb(219, 0, 0); */
 }
 
-#page2 h2{
+.con2 h2{
+    letter-spacing: 2px;
+    text-align: left;
+    color: #fffeff;
     font-family:  'Poppins';    
-    font-size: 5vmin;
+    font-size: 3vmin;
+    font-weight: 200;
 }
 
-#page2 h2 span{
-    color: #3d4609;
-    font-family: 'Kaushan Script', cursive;
-    font-size: 9vmin;
+.con2 h2 span{
+    font-style: italic;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 4vmin;
+    color: #0f6ae9a8;
 }
