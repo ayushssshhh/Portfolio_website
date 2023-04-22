@@ -535,7 +535,7 @@ nav li:hover a{
 
 }
 .con2 h2{
-    font-size: 3vmin;
+    font-size: 4vmin;
     letter-spacing: 2px;
     text-align: left;
     color: #ffffff;
@@ -544,7 +544,7 @@ nav li:hover a{
 }
 
 .con2 h2 span{
-    font-size: 4vmin;
+    font-size: 6vmin;
     font-style: italic;
     font-family: 'poppins';
     font-weight: 600;
